@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Contact | Flowie</title>
+	<link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+	<link rel="stylesheet" href="styles.css">
+	<link href='https://fonts.googleapis.com/css?family=Poppins:400,500,300' rel='stylesheet' type='text/css'>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Website developed by Nadia Rasul. Site design provided by HackerYou -->	
+</head>
+
+<body class="clearfix">
+	<header class="clearfix">
+		<nav class="top-menu ">
+			<div class="wrapper">
+				<ul class="menu-1 top-menu-left">
+					<li><a href="#">Login</a></li>
+					<li><a href="#">Register</a></li>
+					<li><a href="#">Account</a></li>	
+				</ul>
+				<ul class="menu-1 top-menu-right">
+					<li><a href="#">USD</a></li>
+					<li><a href="#">English</a></li>
+					<li><a href="#">Wishlist</a></li>	
+				</ul>
+			</div>			
+		</nav>
+
+		<div class="logo">
+			<a href="index.html"><img src="images/homepage_logo.png" alt=""></a>
+		</div>
+
+		<nav class="menu wrapper">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="index.html#shop">Shop</a></li>
+				<li><a href="index.html#featured">Featured</a></li>
+				<li><a href="about.html#services">Services</a></li>
+				<li><a href="index.html#blog">Blog</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<header class="page-header pageHead">
+		<div class="wrapper">
+			<h1>Contact</h1>
+		</div>
+	</header>	
+
+	<section class="breadcrumbs">
+		<div class="wrapper">
+			<div class="page-name">
+				<p><a href="#">home</a></p>
+			</div>
+			<div class="page-name">
+				<img src="images/arrow-right.png" alt="">
+			</div>
+			<div class="page-name">
+				<p><a href="#">contact</a></p>
+			</div>
+		</div>
+	</section>
+
+	<section class="wrapper information">
+		<div class="info-text clearfix">
+			<div class="info-detail">
+				<img src="images/contact_icons_01.jpg" alt="">
+				<p>hello@flowie.com</p>
+			</div>
+			<div class="info-detail">
+				<img src="images/contact_icons_02.jpg" alt="">
+				<p>(+1) 123 456 7890</p>
+			</div>
+			<div class="info-detail">
+				<img src="images/contact_icons_03.png" alt="">
+				<p>485 Queen Street West</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="contact wrapper clearfix">
+		<div class="contact-left map">
+			<div id="map"></div>
+		</div>
+		
+		<div class="contact-right contact-form">
+			<h2>Get in touch</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit pariatur reiciendis nisi, rem veritatis totam.</p>
+			<form action="">
+				<label for="name">Your Name*</label>
+				<input type="text" id="name">
+				<label for="email">Your Email*</label>
+				<input type="email" id="email">
+				<label for="message">Your Message</label>
+				<textarea id="message" rows="5"></textarea>
+				<input type="submit" value="Send Email" class="contact-email">
+			</form>
+		</div>		
+	</section>
+	<footer>
+		<div class="wrapper ">		
+			<div class="footer-box about">
+				<h2 class="footer">About Us</h2>
+				<img src="images/flowie_dark.jpg" alt="">
+				<p>Flowie - I appreciate all the positive feedback. It means a lot.</p>	
+				<div class="social">
+					<a href="#"><i class="fa fa-facebook-f"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-pinterest"></i></a>
+					<a href="#"><i class="fa fa-youtube-play"></i></a>	
+					<a href="#"><i class="fa fa-instagram"></i></a>		
+				</div>		
+			</div>
+
+			<div class="footer-box info">
+				<h2 class="footer">Information</h2>
+				<ul>
+					<li><a href="#">Shipping and Policies</a></li>
+					<li><a href="#">Delivery</a></li>
+					<li><a href="#">My Account</a></li>
+					<li><a href="#">Asked Questions</a></li>
+					<li><a href="#">Browse Products</a></li>
+					<li><a href="#">Payment and Returns</a></li>
+				</ul>
+			</div>
+
+			<div class="footer-box subscribe">
+				<h2 class="footer">Subscribe</h2>
+				<form action="">
+					<input type="text" name="email" placeholder="Your email">
+					<input type="submit" value="Join" class="btn btn-lime">
+				</form>
+
+				<div class="copyright">
+					<p>&copy Flowie Wordpress. Site by Zooka.io. All Rights Reserved 2015.</p>
+				</div>
+
+			</div>		
+		</div>
+	</footer>
+
+
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<script type="text/javascript">
+        // When the window has finished loading create our google map below
+        google.maps.event.addDomListener(window, 'load', init);
+
+        function init() {
+            // Basic options for a simple Google Map
+            // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+            var mapOptions = {
+                // How zoomed in you want the map to start at (always required)
+                zoom: 11,
+
+                // The latitude and longitude to center the map (always required)
+                center: new google.maps.LatLng(40.6915546,-73.9789694), // New York
+
+                // How you would like to style the map. 
+                // This is where you would paste any style found on Snazzy Maps.
+                styles: [{"featureType":"water","elementType":"geometry.fill","stylers":[{"color":"#d3d3d3"}]},{"featureType":"transit","stylers":[{"color":"#808080"},{"visibility":"off"}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"visibility":"on"},{"color":"#b3b3b3"}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"road.local","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#ffffff"},{"weight":1.8}]},{"featureType":"road.local","elementType":"geometry.stroke","stylers":[{"color":"#d7d7d7"}]},{"featureType":"poi","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#ebebeb"}]},{"featureType":"administrative","elementType":"geometry","stylers":[{"color":"#a7a7a7"}]},{"featureType":"road.arterial","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"road.arterial","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"landscape","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#efefef"}]},{"featureType":"road","elementType":"labels.text.fill","stylers":[{"color":"#696969"}]},{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"visibility":"on"},{"color":"#737373"}]},{"featureType":"poi","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"poi","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"road.arterial","elementType":"geometry.stroke","stylers":[{"color":"#d6d6d6"}]},{"featureType":"road","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{},{"featureType":"poi","elementType":"geometry.fill","stylers":[{"color":"#dadada"}]}]
+            };
+
+            // Get the HTML DOM element that will contain your map 
+            // We are using a div with id="map" seen below in the <body>
+            var mapElement = document.getElementById('map');
+
+            // Create the Google Map using our element and options defined above
+            var map = new google.maps.Map(mapElement, mapOptions);
+
+            // Let's also add a marker while we're at it
+            var marker = new google.maps.Marker({
+            	position: new google.maps.LatLng(40.6915546,-73.9789694),
+            	map: map,
+            	title: 'Snazzy!'
+            });
+        }
+    </script>
+</body>
+</html>
